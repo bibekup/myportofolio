@@ -1,0 +1,370 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.navbar .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .menu li {
+    margin-left: 20px;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar .menu li a:hover {
+    color: #00ff6c;
+}
+/* Home section */
+.home {
+    height: 100vh;
+    background: url('Images/myphoto1.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .home-content {
+    text-align: center;
+    color: white;
+}
+
+.home .text-1 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.home .text-2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.home a {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 18px;
+    background: #00ff6c;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.home a:hover {
+    background: #00cc59;
+}
+/* About section */
+.about {
+    padding: 100px 0;
+    background: #f8f8f8;
+}
+
+.about .title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content .column.left {
+    flex-basis: 45%;
+}
+
+.about-content .column.left img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-content .column.right {
+    flex-basis: 50%;
+}
+
+.about-content .column.right p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+}
+/* Services section */
+.services {
+    padding: 100px 0;
+    background: #f1f1f1;
+}
+
+.services .title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.serv-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 30%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card .box {
+    text-align: center;
+    padding: 30px;
+}
+
+.card .box i {
+    font-size: 50px;
+    color: #00ff6c;
+    margin-bottom: 10px;
+}
+
+.card .box .text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+/* Basic styling for the skills section */
+.skills {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Styling for progress bars */
+.progress {
+    background-color: #ddd;
+    border-radius: 25px;
+    height: 25px;
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 25px;
+    color: white;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: width 0.4s ease;
+}
+
+/* Different colors for each skill bar */
+.html {
+    width: 70%;
+    background-color: #ff4b2b;
+}
+
+.css {
+    width: 60%;
+    background-color: #00b4d8;
+}
+
+.js {
+    width: 50%;
+    background-color: #f3e000;
+}
+
+.python {
+    width: 40%;
+    background-color: #347f98;
+}
+
+.java {
+    width: 70%;
+    background-color: #e34f26;
+}
+
+.mysql {
+    width: 80%;
+    background-color: #ff5733;
+}
+
+.kafka {
+    width: 40%;
+    background-color: #7f58af;
+}
+
+.linux {
+    width: 40%;
+    background-color: #333;
+}
+
+.assembly {
+    width: 50%;
+    background-color: #d46a6a;
+}
+
+.c {
+    width: 40%;
+    background-color: #6a75cd;
+}
+
+/* Basic styles for the contact section */
+.contact {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.column {
+    width: 45%;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Left Column (Info) */
+.icons .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icons i {
+    font-size: 24px;
+    color: #00ff6c;
+    margin-right: 10px;
+}
+
+.info .head {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.info .sub-title {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Right Column (Form) */
+form .fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.field.name,
+.field.email {
+    width: 48%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Submit Button */
+.button-area button {
+    padding: 10px 20px;
+    background-color: #00ff6c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-area button:hover {
+    background-color: #00cc59;
+}
